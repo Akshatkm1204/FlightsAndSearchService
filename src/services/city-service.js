@@ -38,7 +38,7 @@ class CityService{
 
     async getCity(cityId) {
         try {
-            const city = await this.CityRepository.getCity(cityId);
+            const city = await this.CityRepository.getCity(cityId );
             return city;
         } catch (error) {
             console.log("Something went wrong at the service layer");
